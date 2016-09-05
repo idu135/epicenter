@@ -20,7 +20,7 @@
     <div class="container">
       <div class="upper-header">
         <a class="logo"><img src="img/logo.png" alt="Логотип"></a>
-        <h1 class="header-about-company">
+        <h1 class="upper-header__about-company">
           Производитель светильников <br>из испанских и итальянских комплектующих
         </h1>
         <ul class="language-list">
@@ -59,15 +59,13 @@
       <div class="slider-wrapper">
         <input type="radio" name="radio" id="arrow-left" checked>
         <input type="radio" name="radio" id="arrow-right">
-        <div class="slider-controls">
-          <label for="arrow-left"></label>
-          <label for="arrow-right"></label>
-        </div>
+        <label class="slider-arrow-left" for="arrow-left"></label>
+        <label class="slider-arrow-right" for="arrow-right"></label>
         <div class="slides-list">
           <div class="slide slide-1">
             <div class="slide-content">
               <h1>
-                Большие люстры
+                Большие люстры<br>
                 <span>для залов</span>
               </h1>
             </div>
@@ -75,7 +73,7 @@
           <div class="slide slide-2">
             <div class="slide-content">
               <h1>
-                Классические люстры
+                Люстры<br>
                 <span>для храмов</span>
               </h1>
             </div>
@@ -113,7 +111,7 @@
         <div class="new-items clearfix">
           <div class="new-items__title">Новинки</div>
           <form class="search-bar" action="" method="">
-            <input class="search-input" type="text" id="search-input" placeholder="Поиск по сайту">
+            <input class="search-input" type="text" id="search-input" placeholder="Поиск по каталогу">
           </form>
         </div>
         <div class="new-items__list">
@@ -125,7 +123,7 @@
               Паникадило\золото
             </div>
             <div class="item__order clearfix">
-              <div class="item__price">11235 &#8381;</div>
+              <div class="item__price">11235 руб.</div>
               <a class="item__to-cart">Заказать</a>
             </div>
           </div>
@@ -137,7 +135,7 @@
               Золото\проз
             </div>
             <div class="item__order">
-              <div class="item__price">3600 &#8381;</div>
+              <div class="item__price">3600 руб.</div>
               <a class="item__to-cart">Заказать</a>
             </div>
           </div>
@@ -149,7 +147,7 @@
               Золото\проз
             </div>
             <div class="item__order">
-              <div class="item__price">3600 &#8381;</div>
+              <div class="item__price">3600 руб.</div>
               <a class="item__to-cart">Заказать</a>
             </div>
           </div>
@@ -218,17 +216,18 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="container page-footer__wrapper">
       <section class="company-details">
-        <a class="logo"></a>
-        <h1 class="footer-about-company">ООО «ЭПИцентр» - Интернет магазин люстр и светильников в Москве</h1>
-        <div class="contact-details__address">
+        <a class="logo"><img src="img/logo.png" alt=""></a>
+        <h1 class="footer__about-company">ООО «ЭПИцентр» - Интернет магазин люстр и светильников в Москве</h1>
+        <div class="footer__address">
           Наш адрес: г. Москва, улица Садовники, 4 Тел.: (499) 782-32-68, (495) 788-40-29,  e-mail: epicentr-mail@rambler.ru
         </div>
-        <div class="contact-details__tel">+7(495)788-40-29</div>
+        <div class="footer__tel">+7(495)788-40-29</div>
       </section>
-      <section class="about-epicenter">
-        <ul>
+      <section class="epicenter-info">
+        <div class="epicenter-info__title">О нас</div>
+        <ul class="epicenter-info__content">
           <li><a href="#">Наши магазины</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантии</a></li>
@@ -238,33 +237,33 @@
         </ul>
       </section>
       <section class="lamp-series">
-        <div class="lamp-series__title">
-          <div class="lamp-series__content">
-            <ul class="lamp-series__list-1">
-              <li><a href="#">Verona</a></li>
-              <li><a href="#">Toscana ab.</a></li>
-              <li><a href="#">Lutecia</a></li>
-              <li><a href="#">Toledo</a></li>
-              <li><a href="#">Chato</a></li>
-              <li><a href="#">Paloma</a></li>
-              <li><a href="#">Toscana ab.</a></li>
-              <li><a href="#">Florencya</a></li>
-              <li><a href="#">Sevilla</a></li>
-              <li><a href="#">Helvetia</a></li>
-            </ul>
-            <ul class="lamp-series__list-2">
-              <li><a href="#">Gemma</a></li>
-              <li><a href="#">Castilla</a></li>
-              <li><a href="#">Andalucia</a></li>
-              <li><a href="#">Asturias</a></li>
-              <li><a href="#">Toscana</a></li>
-              <li><a href="#">Valencia</a></li>
-              <li><a href="#">Vitoria</a></li>
-              <li><a href="#">Rondo</a></li>
-              <li><a href="#">El Paso</a></li>
-              <li><a href="#">Sabina</a></li>
-            </ul>
-            <ul class="lamp-series__list-3">
+        <div class="lamp-series__title">Серии светильников</div>
+        <div class="lamp-series__content">
+          <ul class="lamp-series__list-1">
+            <li><a href="#">Verona</a></li>
+            <li><a href="#">Toscana ab.</a></li>
+            <li><a href="#">Lutecia</a></li>
+            <li><a href="#">Toledo</a></li>
+            <li><a href="#">Chato</a></li>
+            <li><a href="#">Paloma</a></li>
+            <li><a href="#">Toscana ab.</a></li>
+            <li><a href="#">Florencya</a></li>
+            <li><a href="#">Sevilla</a></li>
+            <li><a href="#">Helvetia</a></li>
+          </ul>
+          <ul class="lamp-series__list-2">
+            <li><a href="#">Gemma</a></li>
+            <li><a href="#">Castilla</a></li>
+            <li><a href="#">Andalucia</a></li>
+            <li><a href="#">Asturias</a></li>
+            <li><a href="#">Toscana</a></li>
+            <li><a href="#">Valencia</a></li>
+            <li><a href="#">Vitoria</a></li>
+            <li><a href="#">Rondo</a></li>
+            <li><a href="#">El Paso</a></li>
+            <li><a href="#">Sabina</a></li>
+          </ul>
+          <ul class="lamp-series__list-3">
               <li><a href="#">Amato</a></li>
               <li><a href="#">Большие люстры</a></li>
               <li><a href="#">Capri</a></li>
@@ -276,7 +275,6 @@
               <li><a href="#">Vienna</a></li>
             </ul>
           </div>
-        </div>
       </section>
       <section class="partnership">
         <div class="partnership__title">Партнерство</div>
@@ -291,6 +289,7 @@
       </section>
     </div>
   </footer>
+
 
   <script>
     $('.bxslider').bxSlider({
