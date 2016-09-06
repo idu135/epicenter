@@ -487,6 +487,10 @@ main{
   top: 100%;
 }
 
+.product-page .items__list::after{
+  display: none;
+}
+
 .item{
   width: 185px;
   height: 285px;
@@ -834,4 +838,154 @@ main{
 
 .filter__list--active-item{
   background-color: #fefaef;
+}
+
+.product-page{
+  padding-top: 20px;
+}
+
+.breadcrumbs{
+  margin-bottom: 25px;
+}
+
+.breadcrumbs li{
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.breadcrumbs a{
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.breadcrumbs li:last-child a{
+  color: #808080;
+}
+
+.item-details{
+  width: 950px;
+  margin-bottom: 44px;
+}
+
+.item-details__description{
+  float: left;
+  width: 518px;
+}
+
+.item-details__name{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.item-details__material{
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.item-details__specification-title{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.item-details__specification-content{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.item-details__specification-name{
+  float: left;
+  width: 135px;
+}
+
+.item-details__specification-info{
+  float: right;
+  width: 300px;
+  font-weight: 600;
+}
+
+.item-details__other-info{
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+
+.item-details__order-btn{
+  width: 172px;
+  height: 48px;
+  font-weight: 300;
+  color: #fff;
+  font-size: 18px;
+  background-color: #322a34;
+  border-radius: 25px;
+  border: none;
+  margin-right: 25px;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 25px;
+  position: relative;
+}
+.item-details__order-btn:after{
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 28px;
+  right: 25px;
+  top: 50%;
+  margin-top: -14px;
+  background: url('../img/icon-item__to-cart.png') no-repeat;
+}
+
+.item-details__price{
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.item-details__photo{
+  float: right;
+  width: 432px;
+}
+
+.item__description{
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 75px;
+  margin-bottom: 45px;
+}
+.item__description:before,
+.item__description:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 25px;
+  background: url('../img/bg-reviews__before.png') no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.item__description:after{
+  top: auto;
+  bottom: 0;
+  background: url('../img/bg-reviews__after.png') no-repeat;
+}
+
+.item__description-title,
+.other-items__title{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.item__description-content{
+  line-height: 24px;
+}
+
+.other-items{
+  padding-bottom: 35px;
 }
