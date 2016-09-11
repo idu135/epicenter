@@ -121,6 +121,13 @@ h1{
   border-radius: 50%;
 }
 
+.language-list a{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
 .lang-rus{
   background-image: url('../img/lang-rus.jpg');
 }
@@ -169,6 +176,10 @@ h1{
   border-radius: 15px;
 }
 
+.header-contacts__call-request:hover{
+  background-color: #ce8720;
+}
+
 .header-contacts__call-request a{
   display: table-cell;
   width: 200px;
@@ -177,6 +188,11 @@ h1{
   text-align: center;
   color: #fff;
 }
+
+.header-contacts__call-request a:active{
+  opacity: .7;
+}
+
 
 .lower-header{
   padding-top: 20px;
@@ -196,6 +212,14 @@ h1{
   color: #fff;
   display: inline-block;
   margin-right: 25px;
+}
+
+.header-navigation li a:hover{
+  opacity: .7;
+}
+
+.header-navigation li a:active{
+  color: #978316;
 }
 
 .header-navigation .active-page{
@@ -309,6 +333,10 @@ h1{
   top: 175px;
 }
 
+.slide-content a{
+  color: #fff;
+}
+
 .slide-content h1{
   font-size: 28px;
   line-height: 1;
@@ -400,6 +428,10 @@ main{
   line-height: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.products__filter a:hover{
+  font-weight: 400;
 }
 
 .products__filter--active{
@@ -538,13 +570,22 @@ main{
   font-size: 12px;
 }
 
-.item__to-cart:after{
+.item__to-cart:hover{
+  opacity: .6;
+}
+
+.item__to-cart:active{
+  opacity: 1;
+}
+
+.item__to-cart::after{
   position: absolute;
   content: '';
   width: 18px;
   height: 16px;
   background-image: url('../img/icon-to-cart.png');
 }
+
 
 .promo-block{
   padding-top: 30px;
@@ -790,6 +831,14 @@ main{
   opacity: .47;
 }
 
+
+.epicenter-info__content a:hover,
+.lamp-series__content a:hover,
+.partnership a:hover{
+  opacity: .8;
+
+}
+
 .lamp-series__content{
   display: -webkit-flex;
   display: -moz-flex;
@@ -839,6 +888,10 @@ main{
 
 .filter__list a{
   padding-left: 10px;
+}
+
+.filter__list a:hover{
+  color: #cc6600;
 }
 
 .filter__list--active-item{
@@ -939,6 +992,14 @@ main{
   background: url('../img/icon-item__to-cart.png') no-repeat;
 }
 
+
+.item-details__order-btn:hover{
+  opacity: .8;
+}
+
+.item-details__order-btn:active{
+  opacity: 1;
+}
 .item-details__price{
   display: inline-block;
   font-size: 35px;
